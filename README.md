@@ -8,7 +8,8 @@ https://netflix-dashboard-vgjvr7ayztrvbmxwsypmyc.streamlit.app/
 
 # Image Examples
 <img width="540" height="256" alt="image" src="https://github.com/user-attachments/assets/2ffb2cf9-c868-4ea5-a3a4-30dc1f8f8d56" />
-C:\Users\jayde\netflix-dashboard\imgs\movies_vs_tv_shows_per_year.png 
+<img width="530" height="299" alt="image" src="https://github.com/user-attachments/assets/73a11a66-ae59-40b1-be85-b52fdd61191f" />
+
 
 
 ## What it does
