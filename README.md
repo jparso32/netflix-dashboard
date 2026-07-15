@@ -3,6 +3,13 @@
 An interactive Streamlit dashboard exploring Netflix's title catalog — ratings,
 genres, runtime, content growth over time, and country-based genre filtering.
 
+# Link to Dashboard
+https://netflix-dashboard-vgjvr7ayztrvbmxwsypmyc.streamlit.app/ 
+
+# Image Examples
+<img width="540" height="256" alt="image" src="https://github.com/user-attachments/assets/2ffb2cf9-c868-4ea5-a3a4-30dc1f8f8d56" />
+
+
 ## What it does
 
 This dashboard answers a handful of questions about Netflix's content library
