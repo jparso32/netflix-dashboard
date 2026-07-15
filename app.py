@@ -39,7 +39,6 @@ rating_counts.columns = ['rating', 'count']
 fig_rating = px.bar(rating_counts, x='rating', y='count', title='Titles by Rating')
 st.plotly_chart(fig_rating)
 
-fig_rating.write_image('imgs/rating_counts.png')
 
 # ---------------------------------------------------------
 # CHART 2: Top Genres (bar chart)
@@ -57,7 +56,6 @@ genre_counts.columns = ['genre', 'count']
 
 fig_genre = px.bar(genre_counts, x='genre', y='count', title='Titles by Genre')
 st.plotly_chart(fig_genre)
-fig_genre.write_image('imgs/genre_counts.png')
 
 # ---------------------------------------------------------
 # CHART 3: Movie Runtime Distribution (histogram)
@@ -68,7 +66,6 @@ fig_genre.write_image('imgs/genre_counts.png')
 movies_df = df[df['duration_type'] == 'min']
 fig_duration = px.histogram(movies_df, x='duration_num', nbins=20, title='Movie Runtime Distribution')
 st.plotly_chart(fig_duration)
-fig_duration.write_image('imgs/duration_distribution.png')
 
 # ---------------------------------------------------------
 # CHART 4: Titles Added to Netflix Per Year (line chart)
@@ -82,7 +79,7 @@ year_counts.columns = ['year_added', 'count']
 
 fig_trend = px.line(year_counts, x='year_added', y='count', title='Titles Added to Netflix Per Year')
 st.plotly_chart(fig_trend)
-fig_trend.write_image('imgs/titles_added_per_year.png')
+
 
 # ---------------------------------------------------------
 # CHART 5: Titles by Country (choropleth map)
@@ -115,7 +112,6 @@ fig_country = px.choropleth(
     title='Netflix Titles by Country'
 )
 st.plotly_chart(fig_country)
-fig_country.write_image('imgs/titles_by_country.png')
 
 # ---------------------------------------------------------
 # CHART 6: Movies vs. TV Shows Added Per Year (multi-line chart)
@@ -134,7 +130,6 @@ fig_type_trend = px.line(
     title='Movies vs. TV Shows Added Per Year'
 )
 st.plotly_chart(fig_type_trend)
-fig_type_trend.write_image('imgs/movies_vs_tv_shows_per_year.png')
 
 # ---------------------------------------------------------
 # INTERACTIVE FILTER: Top Genres by Country
